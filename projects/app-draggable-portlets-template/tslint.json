@@ -1,0 +1,17 @@
+{
+  "extends": "../../tslint.json",
+  "rules": {
+    "directive-selector": [
+      true,
+      "attribute",
+      "draggablePortletsTemplate",
+      "camelCase"
+    ],
+    "component-selector": [
+      true,
+      "element",
+      "draggable-portlets-template",
+      "kebab-case"
+    ]
+  }
+}

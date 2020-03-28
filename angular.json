@@ -130,6 +130,41 @@
           }
         }
       }
+    },
+    "AppDraggablePortletsTemplate": {
+      "root": "projects/app-draggable-portlets-template",
+      "sourceRoot": "projects/app-draggable-portlets-template/src",
+      "projectType": "library",
+      "prefix": "DraggablePortletsTemplate",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/app-draggable-portlets-template/tsconfig.lib.json",
+            "project": "projects/app-draggable-portlets-template/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/app-draggable-portlets-template/src/test.ts",
+            "tsConfig": "projects/app-draggable-portlets-template/tsconfig.spec.json",
+            "karmaConfig": "projects/app-draggable-portlets-template/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/app-draggable-portlets-template/tsconfig.lib.json",
+              "projects/app-draggable-portlets-template/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "prova-app-draggable-portlets-template"

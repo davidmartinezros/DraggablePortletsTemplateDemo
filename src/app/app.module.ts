@@ -3,12 +3,15 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
+import { AppDraggablePortletsTemplateModule } from 'app-draggable-portlets-template';
+
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppDraggablePortletsTemplateModule
   ],
   providers: [],
   bootstrap: [AppComponent]
