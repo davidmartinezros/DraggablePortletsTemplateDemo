@@ -8,7 +8,9 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build-pro": "ng build --base-href https://davidmartinezros.com/Angular7/DraggablePortletsTemplateDemo/ --prod"
+    "build-pro": "ng build --base-href https://davidmartinezros.com/Angular7/DraggablePortletsTemplateDemo/ --prod",
+    "build-githubio": "ng build --prod --base-href https://davidmartinezros.github.io/DraggablePortletsTemplateDemo/",
+    "publish-githubio": "npx ngh --dir=dist/prova-app-draggable-portlets-template/"
   },
   "private": true,
   "dependencies": {
@@ -20,7 +22,7 @@
     "@angular/platform-browser": "~7.2.0",
     "@angular/platform-browser-dynamic": "~7.2.0",
     "@angular/router": "~7.2.0",
-    "app-draggable-portlets-template": "0.0.64",
+    "app-draggable-portlets-template": "0.0.65",
     "core-js": "^2.5.4",
     "rxjs": "~6.3.3",
     "tslib": "^1.9.0",
